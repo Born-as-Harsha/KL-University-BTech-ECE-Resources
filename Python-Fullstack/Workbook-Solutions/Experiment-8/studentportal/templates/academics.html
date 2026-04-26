@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Academic Details</h2>
+
+<p><b>CGPA:</b> {{ academics.cgpa }}</p>
+
+<h3>Subjects</h3>
+
+<ul>
+{% for subject in academics.subjects %}
+<li>{{ subject }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
