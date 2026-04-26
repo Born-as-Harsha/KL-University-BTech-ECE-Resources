@@ -1,0 +1,84 @@
+{% extends 'navbar/adminnavbar.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container mt-4">
+
+    <table class="table table-bordered table-hover text-center align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Day / Period</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 1:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="table-primary">
+                <th>Monday</th>
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>C Programming</td>
+                <td>Break</td>
+                <td>Lab</td>
+                <td>Analog curcuits</td>
+            </tr>
+
+            <tr class="table-secondary">
+                <th>Tuesday</th>
+                <td>Python</td>
+                <td>Maths</td>
+                <td>Electronics</td>
+                <td>Break</td>
+                <td>Chemistry</td>
+                <td>Sports</td>
+            </tr>
+
+            <tr class="table-success">
+                <th>Wednesday</th>
+                <td>DSA</td>
+                <td>Python</td>
+                <td>Maths</td>
+                <td>Break</td>
+                <td>Lab</td>
+                <td>Library</td>
+            </tr>
+
+            <tr class="table-danger">
+                <th>Thursday</th>
+                <td>Electronics</td>
+                <td>Physics</td>
+                <td>Python</td>
+                <td>Break</td>
+                <td>Maths</td>
+                <td>Seminar</td>
+            </tr>
+
+            <tr class="table-warning">
+                <th>Friday</th>
+                <td>Maths</td>
+                <td>DSA</td>
+                <td>Electronics</td>
+                <td>Break</td>
+                <td>Lab</td>
+                <td>Counselling</td>
+            </tr>
+
+            <tr class="table-info">
+                <th>Saturday</th>
+                <td>Revision</td>
+                <td>Mock Test</td>
+                <td>Project</td>
+                <td>Break</td>
+                <td>Project</td>
+                <td>Processors</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+{% endblock %}
