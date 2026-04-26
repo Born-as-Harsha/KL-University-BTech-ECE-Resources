@@ -1,0 +1,20 @@
+[
+    {
+        "id": 101,
+        "name": "HarshaVardhan",
+        "department": "ECE",
+        "university": "KL University"
+    },
+    {
+        "id": 102,
+        "name": "Anitha",
+        "department": "ECE",
+        "university": "KL University"
+    },
+    {
+        "id": 103,
+        "name": "Charan Killaparthi",
+        "department": "CSE topper",
+        "university": "KL University"
+    }
+]

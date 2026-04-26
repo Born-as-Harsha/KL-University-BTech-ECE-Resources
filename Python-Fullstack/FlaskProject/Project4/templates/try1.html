@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Time Viewer</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            height: 100vh;
+        }
+        .card {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+
+<div class="card shadow-lg p-4" style="width: 400px;">
+    <h3 class="text-center mb-4">🌍 World Time Converter</h3>
+
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Select Time Zone</label>
+            <select class="form-select" name="operation" required>
+                <option value="">-- Choose --</option>
+                <option value="Asia/Kabul">Asia/Kabul</option>
+                <option value="Europe/Tirane">Europe/Tirane</option>
+                <option value="Australia/Sydney">Australia/Sydney</option>
+                <option value="Asia/Kolkata">Asia/Kolkata</option>
+                <option value="Europe/London">Europe/London</option>
+            </select>
+        </div>
+
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Get Current Time</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
