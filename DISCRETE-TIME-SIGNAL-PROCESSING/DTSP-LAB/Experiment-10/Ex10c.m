@@ -1,0 +1,24 @@
+clc;
+clear all;
+close all;
+x = [1 2 3 4];
+h = [1 1 -1 1];
+N = 4;
+y = ifft(fft(x,N).*fft(h,N));
+n = 0:N-1;
+figure;
+subplot(3,1,1);
+stem(n,x,'r','filled');
+title('Sequence x[n]');
+grid on;
+subplot(3,1,2);
+stem(n,h,'b','filled');
+title('Sequence h[n]');
+grid on;
+subplot(3,1,3);
+stem(n,real(y),'m','filled');
+title('Circular Convolution y[n]');
+grid on;
+disp('Circular Convolution Output:');
+disp(real(y));
+
