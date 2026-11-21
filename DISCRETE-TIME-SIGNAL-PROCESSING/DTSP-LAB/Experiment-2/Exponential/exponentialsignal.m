@@ -1,0 +1,30 @@
+clc;
+clear all;
+close all;
+n = 0:1:10;
+x1 = (0.9).^n;
+subplot(4,1,1);
+stem(n,x1);
+xlabel("Time");
+ylabel("Amplitude");
+title("Decaying signal");
+x2 = (1.1).^n;
+subplot(4,1,2);
+stem(n,x2);
+xlabel("Time");
+ylabel("Amplitude");
+title("Growing signal");
+x3 = (-0.9).^n;
+subplot(4,1,3);
+stem(n,x3);
+xlabel("Time");
+ylabel("Amplitude");
+title("DoubleSided Decaying exponential signal");
+x4 = (-1.1).^n;
+subplot(4,1,4);
+stem(n,x4);
+xlabel("Time");
+ylabel("Amplitude");
+title("Double side Growing exponential Signal");
+
+

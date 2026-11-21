@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+n = -3:1:3;
+y = randn(size(n));
+stem(n,y);
+xlabel("Time");
+ylabel("Amplitude");
+title("Random Signal");
+legend('2400040454');

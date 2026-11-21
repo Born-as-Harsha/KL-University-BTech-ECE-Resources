@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+n = 0:10;
+a = 0.8;
+y = a.^n;
+stem(n,y,'filled');
+xlabel('Time');
+ylabel('Amplitude');
+title('Discrete Time Exponential Signal');
+legend('2400040454');
+axis([0 10 0 1.2]);

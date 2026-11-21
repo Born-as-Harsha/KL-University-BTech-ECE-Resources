@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+n = -3:1:3;
+y = [0 0 0 1 1 1 1];
+stem(n, y);
+xlabel("Time");
+ylabel("Amplitude");
+legend("2400040454");
+title("Unit step Signal");
