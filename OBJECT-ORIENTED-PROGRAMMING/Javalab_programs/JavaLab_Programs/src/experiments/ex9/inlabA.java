@@ -1,0 +1,39 @@
+package experiments.ex9;
+
+import java.util.*;
+
+class Student {
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public String toString() {
+        return id + " " + name;
+    }
+}
+
+class SortById implements Comparator<Student> {
+    public int compare(Student s1, Student s2) {
+        return s1.id - s2.id;
+    }
+}
+
+public class inlabA {
+    public static void main(String[] args) {
+
+        ArrayList<Student> list = new ArrayList<>();
+
+        list.add(new Student(3, "Ravi"));
+        list.add(new Student(1, "Anil"));
+        list.add(new Student(2, "Kiran"));
+
+        Collections.sort(list, new SortById());
+
+        for (Student s : list)
+            System.out.println(s);
+    }
+}
